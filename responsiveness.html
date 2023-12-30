@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <style>
+        h2{
+            color:rgb(81, 255, 196) ;
+            text-align: center;
+        }
+        body {
+            color: rgb(255, 0, 0);
+            background-color: black;    
+        }
+        div.first{
+            background-color: aliceblue;
+            text-align: center;
+        }
+        div.second{
+            background-color: rgb(217, 237, 254);
+            text-align: center;
+        }
+        div.third{
+            background-color: rgb(159, 206, 247);
+            text-align: center;
+        }
+        div.forth{
+            background-color: rgb(78, 169, 247);
+            text-align: center;
+        }
+
+        @media  screen and (max-width: 450px){
+            div.first,div.second,div.third,div.forth{
+                color: red;
+                width: 100%;
+            }      
+        }
+        @media screen and (min-width:451px) and (max-width:900px){
+            div.first,div.second{
+                color: red;
+                width: 50%;
+                display: inline-block;
+                margin-right: -4px;
+
+            }
+            div.third,div.forth{
+                color: red;
+                width: 50%;
+                display: inline-block;
+                margin-right: -4px;
+
+        
+            }
+        }
+        @media  screen and (min-width: 901px){
+            div.first,div.second,div.third,div.forth{
+                color: red;
+                width: 25%;
+                display: inline-block;
+                margin-right: -4px;
+            } }         
+    </style>
+</head>
+<body>
+    <h2>Name of the students selected for Intern</h2>
+    <div class="first">
+        <h3>First</h3>
+        <p>Anup Bajgain</p>
+    </div>
+
+    <div class="second">
+        <h3>Second</h3>
+        <p>Prakash Poudel</p>
+    </div>
+    <div class="third">
+        <h3>Third</h3>
+        <p>Sudip Niroula</p>
+
+    </div>
+    <div class="forth">
+        <h3>Forth</h3>
+        <p>Chandon Rajak</p>
+    </div>
+</body>
+</html>
