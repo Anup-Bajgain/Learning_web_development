@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex challenge 3</title>
+    <style>
+        .container{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+        #nav{
+            background-color: green;
+            width: 20%;
+            max-width: 200px;
+            /* height:500px; */
+            padding: 10px;
+        }
+        #body1{
+            background-color: blueviolet;
+            height: 10vh;
+            padding: 5px;
+            
+        }
+        #body2{
+            background-color: aquamarine;
+            height: 80vh;
+            padding:5px;
+        }
+        #body3{
+            background-color:blanchedalmond;
+            height:10vh;
+            padding:5px;
+        }
+        .item{
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="nav">nav</div>
+        <div class="item">
+            <div id="body1">header</div>
+            <div id="body2">article</div>
+            <div id="body3">footer</div>
+        </div>
+    </div>
+</body>
+</html>
