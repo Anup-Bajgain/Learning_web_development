@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2 challenge</title>
+    <style>
+        .container{
+            display: grid;
+            height: 100vh;            
+            grid-gap:10px;
+            grid-template-columns: repeat(12,1fr);
+
+        }
+        .box{
+            grid-gap:10px;
+            background-color: yellow;
+            padding: 20px;
+        }
+        #box-1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 7;
+        }
+        #box-2{
+            grid-column-start: 3;
+            grid-column-end: 13;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        #box-3{
+            grid-column-start: 3;
+            grid-column-end: 11;
+            grid-row-start: 2;
+            grid-row-end: 6;
+        }
+        #box-4{
+            grid-column-start: 3;
+            grid-column-end: 13;
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+        #box-5{
+            grid-column-start: 11;
+            grid-column-end: 13;
+            grid-row-start: 2;
+            grid-row-end: 6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">Nav</div>
+        <div class="box" id="box-2">Header</div>
+        <div class="box" id="box-3">Article</div>
+        <div class="box" id="box-4">Footer</div>
+        <div class="box" id="box-5">Ads</div>
+    </div>
+</body>
+</html>

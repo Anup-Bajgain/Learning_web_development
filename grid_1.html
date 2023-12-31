@@ -8,39 +8,62 @@
         .container {
             display: grid;
             grid-template-columns: repeat(6,1fr);
+            text-align: center;
+            grid-gap:10px;
+            height: 100vh;
+        }
+        .box{
+            display: grid;
+            grid-gap:10px;
+            
+        }
+        .box-1,.b2,.b6{
+            grid-gap:10px;
+            background-color:rgb(167, 236, 154) ;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-        <div class="box">6</div>
-        <div class="box">7</div>
-        <div class="box">8</div>
-        <div class="box">9</div>
-        <div class="box">10</div>
-        <div class="box">11</div>
-        <div class="box">12</div>
-        <div class="box">13</div>
-        <div class="box">14</div>
-        <div class="box">15</div>
-        <div class="box">16</div>
-        <div class="box">17</div>
-        <div class="box">18</div>
-        <div class="box">19</div>
-        <div class="box">20</div>
-        <div class="box">21</div>
-        <div class="box">22</div>
-        <div class="box">23</div>
-        <div class="box">24</div>
-        <div class="box">25</div>
-        <div class="box">26</div>
-        <div class="box">27</div>
-        <div class="box">28</div>
+        <!-- I didn't know something so I assigned multiple classes and I am too lazy to to remove them -->
+        <div class="box box-1"><br>1</div>
+        <div class="box box-2">
+            <div class="b2" id="sub_2"><br>2</div>
+            <div class="b2" id="sub_3"><br>3</div>
+        </div>
+        <div class="box box-3">
+            <div  class="b6" id="sub-4"><br>4</div>
+            <div class="b6"  id="sub-5"><br>5</div>
+            <div  class="b6" id="sub-6"><br>6</div>
+        </div>
+        <div class="box box-4">
+            <div  class="b6" id="sub_7"><br>7</div>
+            <div  class="b6" id="sub_8"><br>8</div>
+            <div  class="b6" id="sub_9"><br>9</div>
+            <div  class="b6" id="sub_10"><br>10</div>
+        </div>
+        <div class="box box-5">
+            <div  class="b6" id="sub_11"><br>11</div>
+            <div  class="b6" id="sub_12"><br>12</div>
+            <div  class="b6" id="sub_13"><br>13</div>
+            <div  class="b6" id="sub_14"><br>14</div>
+            <div  class="b6" id="sub_15"><br>15</div>
+            <div  class="b6" id="sub_16"><br>16</div>
+        </div>
+        <div class="box box-6">
+            <div  class="b6" id="sub_17"><br>17</div>
+            <div  class="b6" id="sub_18"><br>18</div>
+            <div  class="b6" id="sub_19"><br>19</div>
+            <div  class="b6" id="sub_20"><br>20</div>
+            <div  class="b6" id="sub_21"><br>21</div>
+            <div  class="b6" id="sub_22"><br>22</div>
+            <div class="b6"  id="sub_23"><br>23</div>
+            <div  class="b6" id="sub_24"><br>24</div>
+            <div  class="b6" id="sub_25"><br>25</div>
+            <div  class="b6" id="sub_26"><br>26</div>
+            <div  class="b6" id="sub_27"><br>27</div>
+            <div  class="b6" id="sub_28"><br>28</div>
+        </div>
     </div>
 </body>
 </html>
