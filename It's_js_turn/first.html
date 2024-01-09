@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first_js</title>
+    <style>
+        button{
+            background-color: aqua;
+            color: black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS</h1>
+    <button>hello!</button>
+    <script>
+        let hellow = document.querySelector('button');
+        hellow.addEventListener('click', showMsg);
+
+        function showMsg(){
+            // alert("hey what is up");
+            let cmd = prompt('Enter your command');
+            hellow.textContent = "Hello! your command is: " + cmd; 
+
+        }
+    </script>
+</body>
+</html>

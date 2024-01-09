@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anup's BoaT</title>
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width, height=device-height, target-densitydpi=device-dpi">
+    <style>
+        .header{
+            text-align: center;
+            padding-bottom: 50px;
+            font-size: 5em;
+            color:rgb(67, 255, 207) ;
+        }
+        .control_pannels{
+            display: grid;
+            grid-template-columns: repeat(15,1fr);
+            grid-template-rows:repeat(2,1fr);
+            grid-gap:10px;
+            height: 100px;
+            
+        }
+        #power{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #brake{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #left{
+            grid-column-start: 10;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #center{
+            grid-column-start: 12;
+            grid-column-end: 14;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #right{
+            grid-column-start: 14;
+            grid-column-end: 16;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        button{
+            font-size: 5em;
+        }
+    </style>
+    <script>
+        function sendCommand(command) {
+            // Create a new XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+
+            // Define the request type, URL, and whether it should be asynchronous
+            xhr.open("GET", "http://192.168.4.1/" + command, true);
+
+            // Send the request
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <span>My BoaT</span><span id ="boat" style=" color: gray;">&#x1F6E5;</span>
+    </div>
+    <div class="control_pannels">
+        <button id="power" onclick="sendCommand('7')" >&#9889;</button>
+        <button id ="brake" onclick="sendCommand('-7')">&#126995;</button>
+        <button id="left" onclick="sendCommand('-1')">&#8592;</button>
+        <button id="center" onclick="sendCommand('0')">&#9670;</button>
+        <button id="right" onclick="sendCommand('1')">&#8594;</button>
+    </div>
+</body>
+</html>
