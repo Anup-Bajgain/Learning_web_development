@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Loop</title>
+</head>
+<body>
+    5 table
+</body>
+<script>
+    //for loop
+    for(let i = 1; i <=10; i++) {
+
+        console.log(`5*${i} = ${i*5}`);
+    }
+    //while loop
+    let i=0;
+    while(i < 10) {
+        console.log("hello there");
+        i++;
+    }
+
+    //for in loop
+    let something = {
+        name: 'hello',
+        step:3
+    };
+    for(let key in something) {
+        console.log(key, something[key]);
+    }
+    // Array
+    let array = ['hello', 'there', "there1"];
+    for(let index in array){
+        console.log(index,array[index])
+    }
+
+    for(let name of array){
+        console.log(name);
+    }
+</script>
+</html>
